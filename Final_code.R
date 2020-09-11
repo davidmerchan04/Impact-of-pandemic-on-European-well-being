@@ -15,7 +15,7 @@
 rm(list=ls())
 
 setwd("~/Master_DS/TFM/3.Data")
-data=read.csv("SHARE_W7_DAVID_VF1.csv", sep=";",na.strings=" ",dec=",")
+data=read.csv("SHARE_W7.csv", sep=";",na.strings=" ",dec=",")
 
 ### Cleaning data 
 data=data[which(data$cciw_w7!="NA"),]
@@ -444,7 +444,7 @@ for (h in 1:10){
   weights=dataf$data.cciw_w7
   lambda=NULL
   iter.max = 100
-  nstart =100 # To reduce the random effect 
+  nstart =1 # To reduce the random effect 
   na.rm = TRUE
   keep.data = TRUE
   verbose = TRUE
