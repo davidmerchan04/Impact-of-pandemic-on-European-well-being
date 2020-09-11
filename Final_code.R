@@ -444,7 +444,7 @@ for (h in 1:10){
   weights=dataf$data.cciw_w7
   lambda=NULL
   iter.max = 100
-  nstart =1 # To reduce the random effect 
+  nstart =100 # To reduce the random effect 
   na.rm = TRUE
   keep.data = TRUE
   verbose = TRUE
